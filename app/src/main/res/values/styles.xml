@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="miBotonBonito" parent="Theme.AppCompat.Light">
+        <item name="colorPrimaryDark">#00695C</item>
+        <item name="colorButtonNormal">@color/colorbuttonNormal</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+
+    </style>
+    <style name="cajasBonitas" parent="Theme.AppCompat.Light">
+        <item name="android:textSize"> 16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="editTextColor">@color/colorBlanco</item>
+    </style>
+<style name="TV" parent="Theme.AppCompat.Light">
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:textSize">20dp</item>
+
+</style>
+
+</resources>

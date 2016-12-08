@@ -1,0 +1,155 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="#E0F2F1"
+    android:textStyle="bold"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp">
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_marginTop="10dp"
+        android:theme="@style/TV"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/edNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escriba su nombre"
+        android:layout_gravity="center_vertical"
+        android:layout_alignBaseline="@id/edNombre"
+        android:layout_marginLeft="100dp"
+        android:theme="@style/cajasBonitas"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/tvFecha_Nac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento:"
+        android:layout_below="@id/edNombre"
+        android:elegantTextHeight="true"
+        android:theme="@style/TV"
+        android:textStyle="bold"
+                />
+
+    <EditText
+        android:id="@+id/edFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_alignBaseline="@+id/tvFecha_Nac"
+        android:theme="@style/cajasBonitas"
+        android:textStyle="bold"
+        android:minLines="1"
+        />
+
+    <Button
+        android:id="@+id/btnFecha_Nac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/edFecha"
+        android:layout_marginLeft="100dp"
+        android:text="Seleccionar fecha"
+        android:theme="@style/miBotonBonito" />
+
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono:"
+        android:layout_below="@+id/btnFecha_Nac"
+        android:minLines="1"
+        android:theme="@style/TV"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignBaseline="@+id/tvTelefono"
+        android:layout_marginLeft="100dp"
+        android:theme="@style/cajasBonitas"
+        android:textStyle="bold"
+        android:hint="Escribe tu teléfono"
+        />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:theme="@style/TV"
+        android:textStyle="bold"
+        android:layout_below="@+id/edTelefono"
+
+        />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center_vertical"
+        android:layout_alignBaseline="@+id/tvEmail"
+        android:layout_marginLeft="70dp"
+        android:theme="@style/cajasBonitas"
+        android:hint="Escriba tu Email"
+        android:textStyle="bold"
+        android:minLines="1"
+        />
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion del contacto:"
+        android:theme="@style/TV"
+        android:textStyle="bold"
+        android:layout_below="@+id/edEmail"
+        />
+
+    <EditText
+        android:id="@+id/edDescrpcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/tvDescripcion"
+        android:theme="@style/cajasBonitas"
+        android:textStyle="bold"
+        android:hint="Escriba informacion adicional"
+        />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:theme="@style/miBotonBonito"
+        android:layout_below="@+id/edDescrpcion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
